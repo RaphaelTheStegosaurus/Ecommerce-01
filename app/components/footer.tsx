@@ -5,9 +5,9 @@ import { LinkList } from "../lib/content";
 
 export default function Footer() {
   return (
-    <footer className="bg-pink-400 w-screen overflow-x-hidden">
+    <footer className="bg-pink-400 w-screen overflow-x-hidden pt-10">
       <section className="max-w-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-6 overflow-x-hidden">
-        <section className="flex flex-col py-2 px-6">
+        <section className="flex flex-col  px-6">
           <h4 className="mb-4 font-extrabold">Pastel Shop</h4>
           <p>
             Tu destino para productos elegantes y diseño minimalista. Calidad y
