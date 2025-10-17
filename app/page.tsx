@@ -10,14 +10,17 @@ export default function Home() {
           Descubre nuestra selección curada de productos elegantes con diseños
           minimalistas y colores que inspiran.
         </p>
-        <div className="homeButtones flex flex-row gap-2">
+        <div className="homeButtones flex flex-row gap-4">
           <a
             className="text-white bg-pink-400 px-6 py-3 rounded-full text-xl"
             href="#"
           >
             Explorar Ahora
           </a>
-          <a className="px-6 py-3 rounded-full text-xl" href="#">
+          <a
+            className="hover:bg-white transition-colors px-6 py-3 rounded-full text-xl"
+            href="#"
+          >
             Ver Ofertas
           </a>
         </div>
