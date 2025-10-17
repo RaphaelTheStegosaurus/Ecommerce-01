@@ -1,12 +1,12 @@
 export default function Home() {
   return (
     <>
-      <header className="pl-4 min-h-screen flex flex-col">
+      <header className="pl-4 min-h-screen flex flex-col justify-center">
         <h1 className=" py-6 text-4xl flex flex-col font-extrabold">
           Nueva Colección
           <span className="">Primavera 2024</span>
         </h1>
-        <p className="my-6 font-light text-2xl">
+        <p className="md:w-1/2 w-full my-6 font-light text-2xl">
           Descubre nuestra selección curada de productos elegantes con diseños
           minimalistas y colores que inspiran.
         </p>
