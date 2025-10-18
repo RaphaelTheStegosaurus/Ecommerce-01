@@ -40,7 +40,7 @@ const Card_Item = ({
   const LabelDealPercentage = () => {
     if (deal_percentage) {
       return (
-        <span className="absolute bg-orange-400 px-4 py-2 rounded-full text-white text-lg right-5 top-5">{`-${deal_percentage}%`}</span>
+        <span className="z-5 absolute bg-orange-400 px-4 py-2 rounded-full text-white text-lg right-5 top-5">{`-${deal_percentage}%`}</span>
       );
     }
     return;
@@ -48,7 +48,7 @@ const Card_Item = ({
   const Special_Label = () => {
     if (special_label) {
       return (
-        <span className="absolute bg-pink-400 px-4 py-2 rounded-full text-white text-lg left-5 top-5">
+        <span className="z-5 absolute bg-pink-400 px-4 py-2 rounded-full text-white text-lg left-5 top-5">
           {special_label}
         </span>
       );
@@ -56,18 +56,20 @@ const Card_Item = ({
     return;
   };
   return (
-    <article className="relative bg-white p-4 overflow-hidden rounded-3xl w-full md:w-1/2 lg:w-1/3">
+    <article className="hover:shadow-2xl duration-500 relative bg-white p-4 overflow-hidden rounded-3xl w-full md:w-1/2 lg:w-1/3">
       <>{LabelDealPercentage()}</>
       <>{Special_Label()}</>
-      <img
-        className="aspect-square object-cover object-center"
-        src={image}
-        alt={title}
-      />
+      <div className="z-0 imagecontainer overflow-hidden aspect-square">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full transition-transform duration-500 hover:scale-110 scale-100  object-cover object-center"
+        />
+      </div>
       <h3 className="font-medium uppercase text-lg my-3 pl-2">{title}</h3>
       <>{prices_label()}</>
       <a
-        className=" transition-colors flex flex-row w-full justify-center items-center gap-10 hover:bg-transparent bg-pink-400 py-2 border-2 rounded-full hover:text-pink-400 text-white"
+        className=" transition-colors duration-500 flex flex-row w-full justify-center items-center gap-10 hover:bg-transparent bg-pink-400 py-2 border-2 rounded-full hover:text-pink-400 text-white"
         href="#"
       >
         <CiShoppingCart className="text-2xl" />
