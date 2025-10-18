@@ -56,7 +56,7 @@ const Card_Item = ({
     return;
   };
   return (
-    <article className="hover:shadow-2xl duration-500 relative bg-white p-4 overflow-hidden rounded-3xl w-full md:w-1/2 lg:w-1/3">
+    <article className="hover:shadow-2xl duration-500 relative bg-white p-4 overflow-hidden rounded-3xl">
       <>{LabelDealPercentage()}</>
       <>{Special_Label()}</>
       <div className="z-0 imagecontainer overflow-hidden aspect-square">
