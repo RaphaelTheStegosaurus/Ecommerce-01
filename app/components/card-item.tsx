@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { CiShoppingCart } from "react-icons/ci";
+import { CiHeart, CiShoppingCart } from "react-icons/ci";
 
 interface Props {
   title: string;
@@ -67,6 +67,12 @@ const Card_Item = ({
         />
       </div>
       <h3 className="font-medium uppercase text-lg my-3 pl-2">{title}</h3>
+      <a
+        href="#"
+        className=" absolute right-5 bottom-1/4 p-3 transition-all duration-500 text-2xl border-2 hover:border-white border-pink-400 hover:bg-pink-400 text-pink-400 hover:text-white rounded-full"
+      >
+        <CiHeart />
+      </a>
       <>{prices_label()}</>
       <a
         className=" transition-colors duration-500 flex flex-row w-full justify-center items-center gap-10 hover:bg-transparent bg-pink-400 py-2 border-2 rounded-full hover:text-pink-400 text-white"
