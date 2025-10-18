@@ -7,3 +7,4 @@ interface Props {
 const Featured_Collection = ({ items }: Props) => {
   return <div>Featured_Collection</div>;
 };
+export default Featured_Collection;

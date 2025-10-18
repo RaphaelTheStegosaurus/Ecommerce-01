@@ -1,3 +1,5 @@
+import Main_Home from "./components/home/main-home";
+
 export default function Home() {
   return (
     <>
@@ -25,7 +27,7 @@ export default function Home() {
           </a>
         </div>
       </header>
-      <main></main>
+      <Main_Home />
     </>
   );
 }
