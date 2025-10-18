@@ -6,7 +6,7 @@ import Categories_Panel from "./categories";
 const Main_Home = () => {
   return (
     <main>
-      <Featured_Collection items="none" />
+      <Featured_Collection />
       <Deals_Panel items="none" />
       <Categories_Panel item="none" />
     </main>
