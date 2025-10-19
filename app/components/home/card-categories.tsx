@@ -2,7 +2,31 @@ import React from "react";
 
 interface Props {
   title: string;
-  icon: string;
+  icon:
+    | "❤️"
+    | "🍂"
+    | "🌺"
+    | "🏠"
+    | "🌛"
+    | "🌞"
+    | "🌧️"
+    | "🛁"
+    | "🏖️"
+    | "✈️"
+    | "❄️"
+    | "🚺"
+    | "🚹"
+    | "🎅"
+    | "👻"
+    | "🥳"
+    | "👙"
+    | "👠"
+    | "👑"
+    | "⚽"
+    | "💄"
+    | "🧩"
+    | "🖥️"
+    | "📚";
   bg:
     | "bg-emerald-200"
     | "bg-cyan-200"
