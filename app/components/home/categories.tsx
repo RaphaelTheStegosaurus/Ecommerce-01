@@ -5,6 +5,11 @@ interface Props {
 }
 
 const Categories_Panel = ({ item }: Props) => {
-  return <div>Categories_Panel</div>;
+  return (
+    <section>
+      <h2>Explora por Categoría</h2>
+      <p>Encuentra exactamente lo que buscas navegando nuestras categorías</p>
+    </section>
+  );
 };
 export default Categories_Panel;
