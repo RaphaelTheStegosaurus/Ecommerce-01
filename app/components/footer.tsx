@@ -23,14 +23,24 @@ export default function Footer() {
         </section>
         <List_Link title="Tienda" list={LinkList.Tienda} />
         <List_Link title="Ayuda" list={LinkList.Ayuda} />
-        <section>
+        <section className="">
           <h4 className="mb-4 font-extrabold">Newletter</h4>
           <p>Recibe ofertas exclusivas y novedades</p>
+          <div className="flex flex-row mt-4">
+            <input
+              className="transition-all ease-in-out rounded-full text-sm border-2"
+              type="email"
+              name="user_email"
+              id="user_email"
+            />
+            <button
+              className="transition-all ease-in-out duration-500 rounded-full text-sm px-3 py-2 border-2 hover:border-white border-pink  hover:bg-pink-400 bg-white text-pink-400 hover:text-white "
+              type="submit"
+            >
+              Enviar
+            </button>
+          </div>
         </section>
-        <form className="email">
-          <input type="email" name="user_email" id="user_email" />
-          <button type="submit"></button>
-        </form>
       </section>
       <div className="autor max-w-screen flex flex-col  items-center py-12">
         <p className="font-extralight text-yellow-200 ">

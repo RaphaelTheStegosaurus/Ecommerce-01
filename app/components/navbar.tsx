@@ -36,18 +36,18 @@ const Navbar = () => {
         </div>
         <a
           href="#"
-          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
+          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl text-2xl hidden md:block"
         >
           <CiUser />
         </a>
         <a
-          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
+          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl text-2xl hidden md:block"
           href="#"
         >
           <CiHeart />
         </a>
         <a
-          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
+          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl text-2xl hidden md:block"
           href="#"
         >
           <CiShoppingCart />
@@ -80,18 +80,18 @@ const Navbar = () => {
           </div>
           <a
             href="#"
-            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
+            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl text-2xl"
           >
             <CiUser />
           </a>
           <a
-            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
+            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl text-2xl"
             href="#"
           >
             <CiHeart />
           </a>
           <a
-            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
+            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl text-2xl"
             href="#"
           >
             <CiShoppingCart />
