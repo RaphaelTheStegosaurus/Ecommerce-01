@@ -20,7 +20,7 @@ const Social_Media_Button = ({ name }: Props) => {
     Linkedin: <CiLinkedin />,
   };
   return (
-    <li className="hover:bg-white mx-1 rounded-full p-1 transition-colors">
+    <li className="transition duration-500 ease-in-out hover:bg-white mx-1 rounded-full p-1 transition-colors">
       <a className=" text-2xl" href="#" title={name}>
         {ICONS_SOCIAL_MEDIA[name]}
       </a>
