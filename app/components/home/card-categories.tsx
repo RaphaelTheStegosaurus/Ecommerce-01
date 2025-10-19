@@ -26,6 +26,7 @@ interface Props {
     | "💄"
     | "🧩"
     | "🖥️"
+    | "👗"
     | "📚";
   bg:
     | "bg-emerald-200"
@@ -43,12 +44,16 @@ interface Props {
 
 const Card_Categories = ({ title, icon, bg, stock }: Props) => {
   return (
-    <article>
-      <div className={`${bg} `}>
-        <span>{icon}</span>
+    <article className="group hover:shadow-xl transition ease-in-out duration-500 pb-4 w-full bg-white rounded-3xl overflow-hidden flex-col justify-center items-center">
+      <div
+        className={`${bg}  w-full grid place-content-center p-8 aspect-video`}
+      >
+        <span className="text-6xl group-hover:scale-125 ease-in-out duration-500 transition">
+          {icon}
+        </span>
       </div>
-      <h4>{title}</h4>
-      <h5>{stock} productos</h5>
+      <h4 className="text-lg font-semibold text-center mt-6 mb-2">{title}</h4>
+      <h5 className="text-sm text-center text-gray-500">{stock} productos</h5>
     </article>
   );
 };
