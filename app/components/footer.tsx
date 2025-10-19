@@ -28,13 +28,13 @@ export default function Footer() {
           <p>Recibe ofertas exclusivas y novedades</p>
           <div className="flex flex-row mt-4">
             <input
-              className="transition-all ease-in-out rounded-full text-sm border-2"
+              className="transition-all ease-in-out rounded-full text-center text-white focus:text-pink-400 text-sm border-2 leading-tight border-pink-800 focus-within:bg-white"
               type="email"
               name="user_email"
               id="user_email"
             />
             <button
-              className="transition-all ease-in-out duration-500 rounded-full text-sm px-3 py-2 border-2 hover:border-white border-pink  hover:bg-pink-400 bg-white text-pink-400 hover:text-white "
+              className="outline-2 transition-all ease-in-out duration-500 rounded-full text-sm px-3 py-2 border-2 hover:border-white border-pink  hover:bg-pink-400 bg-white text-pink-400 hover:text-white "
               type="submit"
             >
               Enviar
