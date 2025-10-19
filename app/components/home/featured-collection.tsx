@@ -1,4 +1,3 @@
-// "use client";
 import React from "react";
 import Card_Item from "../card-item";
 const Featured_Collection = () => {

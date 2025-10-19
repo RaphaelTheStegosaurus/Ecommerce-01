@@ -14,13 +14,13 @@ export default function Home() {
         </p>
         <div className="homeButtones flex flex-row gap-4">
           <a
-            className="text-white bg-pink-400 px-6 py-3 rounded-full text-xl"
+            className="transition ease-in-out duration-500 border-2 hover:border-pink-400 border-white hover:text-pink-400 text-white hover:bg-white bg-pink-400 px-6 py-3 rounded-full text-xl"
             href="#"
           >
             Explorar Ahora
           </a>
           <a
-            className="hover:bg-white transition-colors px-6 py-3 rounded-full text-xl"
+            className="transition ease-in-out duration-500 border-2 hover:border-pink-400 border-white hover:text-pink-400 text-white hover:bg-white transition-colors px-6 py-3 rounded-full text-xl"
             href="#"
           >
             Ver Ofertas
