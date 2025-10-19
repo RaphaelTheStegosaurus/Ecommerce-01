@@ -20,43 +20,35 @@ const Featured_Collection = () => {
           special_label="Nuevo"
         />
         <Card_Item
-          image="/media/items/item-01/pic01.jpg"
+          image="/media/items/item-02/pic03.jpg"
           title="t-shirt"
-          price={20.99}
-          deals_price={15.99}
-          deal_percentage={25}
-          special_label="Nuevo"
+          price={25.99}
+          special_label="Mejor Vendido"
         />
         <Card_Item
-          image="/media/items/item-01/pic01.jpg"
+          image="/media/items/item-03/pic02.jpg"
           title="t-shirt"
           price={20.99}
-          deals_price={15.99}
-          deal_percentage={25}
-          special_label="Nuevo"
+          deals_price={11.99}
+          deal_percentage={50}
+          special_label="Rebaja"
         />
         <Card_Item
-          image="/media/items/item-01/pic01.jpg"
-          title="t-shirt"
-          price={20.99}
-          deals_price={15.99}
-          deal_percentage={25}
-          special_label="Nuevo"
+          image="/media/items/item-04/pic01.avif"
+          title="cap"
+          price={9.99}
         />
         <Card_Item
-          image="/media/items/item-01/pic01.jpg"
-          title="t-shirt"
-          price={20.99}
-          deals_price={15.99}
-          deal_percentage={25}
-          special_label="Nuevo"
+          image="/media/items/item-05/pic01.jpg"
+          title="beanie"
+          price={9.99}
+          deals_price={4.99}
+          deal_percentage={50}
         />
         <Card_Item
-          image="/media/items/item-01/pic01.jpg"
-          title="t-shirt"
-          price={20.99}
-          deals_price={15.99}
-          deal_percentage={25}
+          image="/media/items/item-06/pic01.jpg"
+          title="Boots"
+          price={39.99}
           special_label="Nuevo"
         />
       </section>
