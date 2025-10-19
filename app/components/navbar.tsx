@@ -20,10 +20,10 @@ const Navbar = () => {
   });
   return (
     <>
-      <nav className="z-10 bg-orange-400 max-w-screen px-4 py-4 flex flex-row items-center justify-between sticky top-0">
+      <nav className="z-20 bg-orange-400 max-w-screen px-4 py-4 flex flex-row items-center justify-between sticky top-0">
         <h2 className="text-2xl">Shop</h2>
         <ul className="md:flex md:flex-row hidden gap-5 text-lg">{NavLinks}</ul>
-        <div className="hidden md:flex md:flex-row searchbox rounded-full shadow-sm border-2  border-orange-300 focus-within:border-white items-center">
+        <div className="transition duration-500 ease-in-out hidden md:flex md:flex-row searchbox rounded-full shadow-sm border-2  border-orange-300 focus-within:border-white items-center">
           <button className="w-5 h-5 text-white font-bold text-md ml-2">
             <CiSearch />
           </button>
@@ -36,39 +36,38 @@ const Navbar = () => {
         </div>
         <a
           href="#"
-          className="hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
+          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
         >
           <CiUser />
         </a>
         <a
-          className="hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
+          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
           href="#"
         >
           <CiHeart />
         </a>
         <a
-          className="hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
+          className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl hidden md:block"
           href="#"
         >
           <CiShoppingCart />
         </a>
-        <a
+        <button
           onClick={() => {
             setisTheMenuActive(!isTheMenuActive);
           }}
           className="hover:bg-white p-3 rounded-2xl transition-colors text-2xl md:hidden"
-          href="#"
         >
           {isTheMenuActive ? <IoMdClose /> : <CiMenuBurger />}
-        </a>
+        </button>
       </nav>
       <nav
         className={`${
           isTheMenuActive ? "translate-y-0" : "-translate-y-full"
-        } menu flex flex-col items-center justify-center transition-transform z-0 fixed w-screen h-screen top-0 left-0 bg-amber-400 md:hidden`}
+        } menu flex flex-col items-center justify-center transition duration-500 ease-in-out z-10 fixed w-screen h-screen top-0 left-0 bg-amber-400 md:hidden`}
       >
         <div className="flex flex-row w-full items-center justify-evenly">
-          <div className="flex flex-row searchbox rounded-full shadow-sm border-2  border-pink-400 focus-within:border-white items-center">
+          <div className="transition duration-500 ease-in-out flex flex-row searchbox rounded-full shadow-sm border-2  border-pink-400 focus-within:border-white items-center">
             <button className="w-5 h-5 text-white font-bold text-md ml-2">
               <CiSearch />
             </button>
@@ -81,18 +80,18 @@ const Navbar = () => {
           </div>
           <a
             href="#"
-            className="hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
+            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
           >
             <CiUser />
           </a>
           <a
-            className="hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
+            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
             href="#"
           >
             <CiHeart />
           </a>
           <a
-            className="hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
+            className="transition duration-500 ease-in-out hover:bg-white p-3 rounded-2xl transition-colors text-2xl"
             href="#"
           >
             <CiShoppingCart />
