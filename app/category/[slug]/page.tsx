@@ -10,8 +10,12 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   const categorySlug = params.slug;
   const CATEGORY_NAME = categorySlug.replace("-", " ");
   return (
-    <Custom_Header title={`Categoria: ${CATEGORY_NAME}`}>
-      <p></p>
+    <Custom_Header
+      title={`Categoria:`}
+      titleMarked={CATEGORY_NAME}
+      classes="items-center"
+    >
+      <p className=""></p>
     </Custom_Header>
   );
 }

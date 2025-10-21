@@ -4,9 +4,10 @@ interface Props {
   children: React.ReactNode;
   title: string;
   titleMarked?: string;
+  classes?: string;
 }
 
-const Custom_Header = ({ title, titleMarked, children }: Props) => {
+const Custom_Header = ({ title, titleMarked, classes, children }: Props) => {
   const spanTitle = () => {
     if (titleMarked) {
       return <span>{titleMarked}</span>;
@@ -14,7 +15,7 @@ const Custom_Header = ({ title, titleMarked, children }: Props) => {
     return <></>;
   };
   return (
-    <header className="pl-4 min-h-screen flex flex-col justify-center">
+    <header className={`${classes} pl-4 min-h-screen flex flex-col`}>
       <h1 className="py-6 text-4xl flex flex-col font-extrabold">
         {title} {spanTitle()}
       </h1>

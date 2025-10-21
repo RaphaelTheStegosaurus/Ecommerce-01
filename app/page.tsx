@@ -4,7 +4,11 @@ import Main_Home from "./components/home/main-home";
 export default function Home() {
   return (
     <>
-      <Custom_Header title="Nueva Colección" titleMarked="Primavera 2024">
+      <Custom_Header
+        title="Nueva Colección"
+        titleMarked="Primavera 2024"
+        classes="justify-center"
+      >
         <p className="md:w-1/2 w-full my-6 font-light text-2xl">
           Descubre nuestra selección curada de productos elegantes con diseños
           minimalistas y colores que inspiran.
