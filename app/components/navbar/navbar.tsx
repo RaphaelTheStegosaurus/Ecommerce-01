@@ -28,10 +28,10 @@ const Navbar = () => {
       <nav
         className={`${
           isTheMenuActive ? "translate-y-0" : "-translate-y-full"
-        } menu flex flex-col items-center justify-center transition duration-500 ease-in-out z-10 fixed w-screen h-screen top-0 left-0 bg-amber-400 md:hidden`}
+        }  flex flex-col items-center justify-end pb-8 transition duration-500 ease-in-out z-10 fixed w-screen h-screen top-0 left-0 bg-amber-400 md:hidden`}
       >
-        <div className="flex flex-row w-full items-center justify-evenly">
-          <SearchBox clases="md:hidden flex flex-row" />
+        <SearchBox clases="md:hidden flex flex-row mb-4" />
+        <div className="md:hidden flex flex-row w-full items-center justify-evenly">
           <Icon_Button icon="user" link="#" classes="md:hidden block" />
           <Icon_Button icon="heart" link="#" classes="md:hidden block" />
           <Icon_Button icon="cart" link="#" classes="md:hidden block" />
