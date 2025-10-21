@@ -1,3 +1,5 @@
+import Custom_Header from "@/app/components/header";
+
 interface CategoryPageProps {
   params: {
     slug: string;
@@ -7,8 +9,8 @@ interface CategoryPageProps {
 export default function CategoryPage({ params }: CategoryPageProps) {
   const categorySlug = params.slug;
   return (
-    <div>
+    <Custom_Header>
       <h1>Categoría: {categorySlug.replace("-", " ")}</h1>
-    </div>
+    </Custom_Header>
   );
 }

@@ -5,12 +5,15 @@ import { IoMdClose } from "react-icons/io";
 import List_Links from "./list-links";
 import Icon_Button from "./icon-button";
 import SearchBox from "./searchbox";
+import Link from "next/link";
 const Navbar = () => {
   const [isTheMenuActive, setisTheMenuActive] = useState(false);
   return (
     <>
       <nav className="z-20 bg-orange-400 max-w-screen px-4 py-4 flex flex-row items-center justify-between sticky top-0">
-        <h2 className="text-2xl">Shop</h2>
+        <Link href="/">
+          <h2 className="text-2xl">Shop</h2>
+        </Link>
         <List_Links classes="md:flex md:flex-row hidden" />
         <SearchBox clases="hidden md:flex md:flex-row" />
         <Icon_Button icon="user" link="#" classes="hidden md:block" />
