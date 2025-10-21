@@ -1,10 +1,16 @@
 import { LinkList } from "@/app/lib/content";
+import Link from "next/link";
 
 const List_Links = () => {
   const NavLinks = LinkList.Tienda.map((value, index) => {
     return (
       <li key={index}>
-        <a href={value.link}>{value.title}</a>
+        <Link
+          className="hover:text-white transition duration-500"
+          href={value.link}
+        >
+          {value.title}
+        </Link>
       </li>
     );
   });

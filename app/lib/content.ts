@@ -2,23 +2,23 @@ export const LinkList = {
   Tienda: [
     {
       title: "Nuevos",
-      link: "#",
+      link: "/category/nuevo",
     },
     {
       title: "Mujer",
-      link: "#",
+      link: "/category/mujer",
     },
     {
       title: "Hombre",
-      link: "#",
+      link: "/category/hombre",
     },
     {
       title: "Hogar",
-      link: "#",
+      link: "/category/hogar",
     },
     {
       title: "Ofertas",
-      link: "#",
+      link: "/category/ofertas",
     },
   ],
   Ayuda: [
