@@ -1,18 +1,15 @@
+import Custom_Header from "./components/header";
 import Main_Home from "./components/home/main-home";
 
 export default function Home() {
   return (
     <>
-      <header className="pl-4 min-h-screen flex flex-col justify-center">
-        <h1 className=" py-6 text-4xl flex flex-col font-extrabold">
-          Nueva Colección
-          <span className="">Primavera 2024</span>
-        </h1>
+      <Custom_Header title="Nueva Colección" titleMarked="Primavera 2024">
         <p className="md:w-1/2 w-full my-6 font-light text-2xl">
           Descubre nuestra selección curada de productos elegantes con diseños
           minimalistas y colores que inspiran.
         </p>
-        <div className="homeButtones flex flex-row gap-4">
+        <div className="flex flex-row gap-4">
           <a
             className="transition ease-in-out duration-500 border-2 hover:border-pink-400 border-white hover:text-pink-400 text-white hover:bg-white bg-pink-400 px-6 py-3 rounded-full text-xl"
             href="#"
@@ -20,13 +17,13 @@ export default function Home() {
             Explorar Ahora
           </a>
           <a
-            className="transition ease-in-out duration-500 border-2 hover:border-pink-400 border-white hover:text-pink-400 text-white hover:bg-white transition-colors px-6 py-3 rounded-full text-xl"
+            className="transition ease-in-out duration-500 border-2 hover:border-pink-400 border-white hover:text-pink-400 text-white hover:bg-white px-6 py-3 rounded-full text-xl"
             href="#"
           >
             Ver Ofertas
           </a>
         </div>
-      </header>
+      </Custom_Header>
       <Main_Home />
     </>
   );
