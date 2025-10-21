@@ -59,10 +59,12 @@ const Card_Item = ({
     <article className="hover:shadow-2xl duration-500 relative bg-white p-4 overflow-hidden rounded-3xl">
       <>{LabelDealPercentage()}</>
       <>{Special_Label()}</>
-      <div className="z-0 imagecontainer overflow-hidden aspect-square">
-        <img
+      <div className="z-0  overflow-hidden aspect-square">
+        <Image
           src={image}
           alt={title}
+          width={400}
+          height={400}
           className="w-full h-full transition-transform duration-500 hover:scale-110 scale-100  object-cover object-center"
         />
       </div>

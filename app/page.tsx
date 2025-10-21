@@ -8,6 +8,7 @@ export default function Home() {
         title="Nueva Colección"
         titleMarked="Primavera 2024"
         classes="justify-center"
+        h1classes="flex flex-col "
       >
         <p className="md:w-1/2 w-full my-6 font-light text-2xl">
           Descubre nuestra selección curada de productos elegantes con diseños
