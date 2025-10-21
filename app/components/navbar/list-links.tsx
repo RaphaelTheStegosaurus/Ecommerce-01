@@ -1,7 +1,9 @@
 import { LinkList } from "@/app/lib/content";
 import Link from "next/link";
-
-const List_Links = () => {
+interface Props {
+  classes: string | undefined;
+}
+const List_Links = ({ classes }: Props) => {
   const NavLinks = LinkList.Tienda.map((value, index) => {
     return (
       <li key={index}>
@@ -14,8 +16,7 @@ const List_Links = () => {
       </li>
     );
   });
-  return (
-    <ul className="md:flex md:flex-row hidden gap-5 text-lg">{NavLinks}</ul>
-  );
+  return <ul className={`${classes} gap-5 text-lg`}>{NavLinks}</ul>;
 };
+//
 export default List_Links;

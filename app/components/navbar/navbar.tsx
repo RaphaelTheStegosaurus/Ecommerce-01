@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { LinkList } from "../../lib/content";
 import {
   CiHeart,
   CiMenuBurger,
@@ -15,7 +16,7 @@ const Navbar = () => {
     <>
       <nav className="z-20 bg-orange-400 max-w-screen px-4 py-4 flex flex-row items-center justify-between sticky top-0">
         <h2 className="text-2xl">Shop</h2>
-        <List_Links />
+        <List_Links classes="md:flex md:flex-row hidden" />
         <div className="transition duration-500 ease-in-out hidden md:flex md:flex-row searchbox rounded-full shadow-sm border-2  border-orange-300 focus-within:border-white items-center">
           <button className="w-5 h-5 text-white font-bold text-md ml-2">
             <CiSearch />
@@ -90,7 +91,7 @@ const Navbar = () => {
             <CiShoppingCart />
           </a>
         </div>
-        <List_Links />
+        <List_Links classes="flex flex-col md:hidden" />
       </nav>
     </>
   );
