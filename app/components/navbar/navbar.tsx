@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { LinkList } from "../lib/content";
 import {
   CiHeart,
   CiMenuBurger,
@@ -9,20 +8,14 @@ import {
   CiUser,
 } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import List_Links from "./list-links";
 const Navbar = () => {
   const [isTheMenuActive, setisTheMenuActive] = useState(false);
-  const NavLinks = LinkList.Tienda.map((value, index) => {
-    return (
-      <li key={index}>
-        <a href={value.link}>{value.title}</a>
-      </li>
-    );
-  });
   return (
     <>
       <nav className="z-20 bg-orange-400 max-w-screen px-4 py-4 flex flex-row items-center justify-between sticky top-0">
         <h2 className="text-2xl">Shop</h2>
-        <ul className="md:flex md:flex-row hidden gap-5 text-lg">{NavLinks}</ul>
+        <List_Links />
         <div className="transition duration-500 ease-in-out hidden md:flex md:flex-row searchbox rounded-full shadow-sm border-2  border-orange-300 focus-within:border-white items-center">
           <button className="w-5 h-5 text-white font-bold text-md ml-2">
             <CiSearch />
@@ -97,7 +90,7 @@ const Navbar = () => {
             <CiShoppingCart />
           </a>
         </div>
-        <ul className="flex flex-col gap-5 text-lg">{NavLinks}</ul>
+        <List_Links />
       </nav>
     </>
   );
