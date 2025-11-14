@@ -21,6 +21,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <p className="text-lg md:text-xl lg:text-2xl">
           Todo los artículos que están en la categoría de {`"${CATEGORY_NAME}"`}
         </p>
+        <p>Section</p>
       </Custom_Header>
     </>
   );
