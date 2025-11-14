@@ -22,7 +22,9 @@ const Custom_Header = ({
     return <></>;
   };
   return (
-    <header className={`${classes} pl-4 min-h-screen flex flex-col`}>
+    <header
+      className={`${classes} px-8 w-full max-w-screen min-h-screen flex flex-col`}
+    >
       <h1 className={`${h1classes} py-6 text-4xl font-extrabold`}>
         {title} {spanTitle()}
       </h1>
